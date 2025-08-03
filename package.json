@@ -1,0 +1,148 @@
+{
+  "name": "@cosmara-ai/community-sdk",
+  "version": "1.0.0",
+  "description": "COSMARA Community SDK - Multi-provider AI client with intelligent routing and 1,000 free requests/month",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "build:watch": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm run test && npm run lint",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "cosmara",
+    "ai",
+    "openai",
+    "anthropic",
+    "google",
+    "claude",
+    "gemini",
+    "gpt",
+    "llm",
+    "chat",
+    "completion",
+    "multi-provider",
+    "community",
+    "free",
+    "typescript"
+  ],
+  "author": {
+    "name": "COSMARA Team",
+    "email": "developers@cosmara.dev",
+    "url": "https://cosmara.dev"
+  },
+  "license": "MIT",
+  "homepage": "https://cosmara.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cosmara-ai/community-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cosmara-ai/community-sdk/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.24",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.2"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.5.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://cosmara.dev/pricing"
+  },
+  "badges": [
+    {
+      "url": "https://img.shields.io/npm/v/@cosmara-ai/community-sdk",
+      "href": "https://www.npmjs.com/package/@cosmara-ai/community-sdk",
+      "description": "NPM Version"
+    },
+    {
+      "url": "https://img.shields.io/npm/dm/@cosmara-ai/community-sdk",
+      "href": "https://www.npmjs.com/package/@cosmara-ai/community-sdk", 
+      "description": "Monthly Downloads"
+    },
+    {
+      "url": "https://img.shields.io/github/license/cosmara-ai/community-sdk",
+      "href": "https://github.com/cosmara-ai/community-sdk/blob/main/LICENSE",
+      "description": "License"
+    }
+  ],
+  "community": {
+    "tier": "Community",
+    "limits": {
+      "requestsPerMonth": 1000,
+      "requestsPerDay": 100,
+      "requestsPerMinute": 10,
+      "maxUniqueUsers": 10
+    },
+    "features": {
+      "mlRouting": false,
+      "analytics": false,
+      "fallbacks": false,
+      "commercialUse": false
+    },
+    "upgrade": {
+      "nextTier": "Developer",
+      "price": "$49/month",
+      "url": "https://cosmara.dev/pricing",
+      "benefits": [
+        "50,000 requests/month",
+        "ML-powered routing",
+        "Advanced analytics",
+        "Commercial licensing"
+      ]
+    }
+  },
+  "size-limit": [
+    {
+      "path": "dist/index.js",
+      "limit": "100 KB"
+    },
+    {
+      "path": "dist/index.mjs",
+      "limit": "100 KB"
+    }
+  ]
+}
