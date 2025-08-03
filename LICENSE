@@ -1,0 +1,42 @@
+COSMARA COMMUNITY SDK LICENSE
+
+Copyright (c) 2025 COSMARA AI
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to use
+the Software solely for the following purposes:
+
+PERMITTED USES:
+1. Building applications for the COSMARA AI marketplace platform
+2. Educational and research purposes
+3. Contributing improvements back to this project
+4. Personal learning and development
+
+PROHIBITED USES:
+1. Creating competing AI platforms or marketplaces
+2. Commercial use outside the COSMARA ecosystem
+3. Redistributing as part of other AI SDKs or platforms
+4. Using core routing algorithms in competing products
+5. Sublicensing or selling the Software
+6. Creating derivative works for commercial platforms
+
+CONDITIONS:
+- The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software
+- Any modifications or improvements must be contributed back to the COSMARA
+  project under the same license terms
+- Attribution to COSMARA must be maintained in all derivative works
+
+UPGRADE PATH:
+For commercial use, ML-powered routing, and advanced features, please upgrade
+to COSMARA Developer tier: https://cosmara.dev/pricing
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+For questions about licensing, contact: legal@cosmara.dev
